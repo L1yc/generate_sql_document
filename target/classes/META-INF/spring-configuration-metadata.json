@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "config",
+      "type": "com.demo.Generate",
+      "sourceType": "com.demo.Generate"
+    }
+  ],
+  "properties": [
+    {
+      "name": "config.application-context",
+      "type": "org.springframework.context.ApplicationContext",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.description",
+      "type": "java.lang.String",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.designated",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.designated-prefix",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.designated-suffix",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.file-type",
+      "type": "cn.smallbun.screw.core.engine.EngineFileType",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.ignore-prefix",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.ignore-suffix",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.ignore-table",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.demo.Generate"
+    },
+    {
+      "name": "config.version",
+      "type": "java.lang.String",
+      "sourceType": "com.demo.Generate"
+    }
+  ],
+  "hints": []
+}

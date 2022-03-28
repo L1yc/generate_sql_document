@@ -1,0 +1,32 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=UTC
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+
+# 表配置
+config:
+  designated: []
+  designatedPrefix: []
+  designatedSuffix: []
+  ignorePrefix: []
+  ignoreTable: []
+  ignoreSuffix: []
+  version: 1.0
+  describe: 数据库设计文档
+  filePath: result
+#  文件格式 MD|WORD|HTML
+  fileType: MD
+
+
+#=======================================配置信息============================================
+###mysql
+MYSQL_HOST: 127.0.0.1
+MYSQL_PASSWORD: root
+MYSQL_PORT: 3306
+MYSQL_USERNAME: root
+MYSQL_DATABASE: partner
