@@ -8,25 +8,29 @@ spring:
     username: ${MYSQL_USERNAME}
     password: ${MYSQL_PASSWORD}
 
+logging:
+  level:
+    root: debug
+
 # 表配置
 config:
-  designated: []
-  designatedPrefix: []
-  designatedSuffix: []
-  ignorePrefix: []
-  ignoreTable: []
-  ignoreSuffix: []
-  version: 1.0
-  describe: 数据库设计文档
+  designated: ['tb1','tb2'] # 数据表集合
+  designatedPrefix: ["kd"]      # 数据表前缀
+  designatedSuffix: []      # 数据表后缀
+  ignorePrefix: []          # 忽略表前缀
+  ignoreTable: []           # 忽略表
+  ignoreSuffix: []          # 忽略后缀
+  version: 1.0              # 版本
+  description:  数据库科设计文档
   filePath: result
 #  文件格式 MD|WORD|HTML
-  fileType: MD
+  fileType: WORD
 
 
 #=======================================配置信息============================================
 ###mysql
-MYSQL_HOST: 127.0.0.1
-MYSQL_PASSWORD: root
-MYSQL_PORT: 3306
-MYSQL_USERNAME: root
-MYSQL_DATABASE: partner
+#MYSQL_HOST: 127.0.0.1
+#MYSQL_PASSWORD: root
+#MYSQL_PORT: 3306
+#MYSQL_USERNAME: root
+#MYSQL_DATABASE: partner
